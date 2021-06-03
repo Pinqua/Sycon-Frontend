@@ -58,7 +58,7 @@ function Home() {
             </Link>
           </div>
 
-          {documents.map((document) => (
+          {documents?.map((document) => (
             <div key={document._id} className="home__document">
               <Link to={`/documents/${document._id}`}>
                 <div>{document.name}</div>
