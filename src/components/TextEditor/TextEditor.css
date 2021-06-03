@@ -1,0 +1,108 @@
+.container .ql-editor {
+  width: 8.5in;
+  min-height: 11in;
+  padding: 1in;
+  margin: 1rem;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  background-color: white;
+}
+
+.container .ql-container.ql-snow {
+  border: none;
+  display: flex;
+  justify-content: center;
+}
+
+.container .ql-toolbar.ql-snow {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background-color: white;
+  border: none;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+.editor__header {
+  background-color: white;
+  padding: 0.5rem 1rem;
+}
+.editor__header__top {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+}
+.editor__header__top a {
+  color: #1cbad3;
+  text-decoration: none;
+}
+.editor__header__top a:hover {
+  color: #0db4ce;
+}
+.editor__header .name {
+  width: 100%;
+}
+
+.editor__header .name > input {
+  border: none;
+  width: 100%;
+  max-width: 400px;
+  border-bottom: 2px solid black;
+  outline: none;
+  padding: 4px;
+}
+.editor__share {
+  position: relative;
+}
+.editor__dropdown {
+  position: absolute;
+  top: 40px;
+  z-index: 2;
+  border-radius: 4px;
+  right: 0;
+  background-color: white;
+  border: 1px solid #f3f3f3;
+  padding: 1.2rem;
+  font-size: 0.8rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.editor__share__button {
+  border: none;
+  outline: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+  background-color: #1cbad3;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+.editor__share_.editor__share__button:hover {
+  background-color: #0db4ce;
+}
+
+@page {
+  margin: 1in;
+}
+
+@media print {
+  body {
+    background: none;
+  }
+
+  .container .ql-editor {
+    width: 6.5in;
+    height: 9in;
+    padding: 0;
+    margin: 0;
+    box-shadow: none;
+    align-self: flex-start;
+  }
+
+  .container .ql-toolbar.ql-snow {
+    display: none;
+  }
+}
