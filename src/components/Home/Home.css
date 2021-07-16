@@ -1,6 +1,7 @@
 .home {
   height: 100%;
   width: 100%;
+  padding-top: 4rem;
   min-height: 100vh;
   display: flex;
   align-items: center;
@@ -67,6 +68,7 @@
 
 .home__headings {
   width: 100%;
+  padding: 0 0.4rem;
   text-align: center;
 }
 

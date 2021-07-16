@@ -51,7 +51,7 @@ function Home() {
     <div className="home">
       <div className="home__headings">
         <h1>Sycon</h1>
-        <h2>Online text editor with realtime collaboration</h2>
+        <h2>Online word processor with real time collaboration</h2>
       </div>
       <div className="home__box">
         <div className="home__documents">
