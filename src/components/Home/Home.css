@@ -28,6 +28,9 @@
   padding: 1rem;
   flex: 1;
 }
+.loading {
+  padding: 1rem;
+}
 .home__document {
   display: flex;
   cursor: pointer;

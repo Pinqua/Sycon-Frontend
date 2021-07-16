@@ -9,6 +9,7 @@ import { io } from "socket.io-client";
 function Home() {
   const [documents, setDocuments] = useState([]);
   const [socket, setSocket] = useState();
+  const [loading, setLoading] = useState(false);
 
   useEffect(() => {
     //const s = io("http://localhost:9000");
@@ -22,6 +23,7 @@ function Home() {
   }, []);
 
   useEffect(() => {
+    setLoading(true);
     const source = axios.CancelToken.source();
     axios
       .get(`${process.env.REACT_APP_SERVER_URL}`, {
@@ -29,9 +31,11 @@ function Home() {
       })
       .then((result) => {
         setDocuments(result.data);
+        setLoading(false);
       })
       .catch((err) => {
         console.error(err);
+        setLoading(false);
       });
     return () => {
       source.cancel();
@@ -57,23 +61,28 @@ function Home() {
               <div>+ Blank</div>
             </Link>
           </div>
-
-          {documents?.map((document) => (
-            <div key={document._id} className="home__document">
-              <Link to={`/documents/${document._id}`}>
-                <div>{document.name}</div>
-              </Link>
-              <div className="remove">
-                <img
-                  onClick={() => {
-                    removeDoc(document._id);
-                  }}
-                  src={remove}
-                  alt=""
-                />
-              </div>
+          {loading ? (
+            <div className="home__document">
+              <div className="loading">Loading...</div>
             </div>
-          ))}
+          ) : (
+            documents?.map((document) => (
+              <div key={document._id} className="home__document">
+                <Link to={`/documents/${document._id}`}>
+                  <div>{document.name}</div>
+                </Link>
+                <div className="remove">
+                  <img
+                    onClick={() => {
+                      removeDoc(document._id);
+                    }}
+                    src={remove}
+                    alt=""
+                  />
+                </div>
+              </div>
+            ))
+          )}
         </div>
       </div>
     </div>
