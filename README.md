@@ -12,7 +12,7 @@ Online word processor with real time collaboration build using react.js and node
     
 ## Demo
 
-https://sycon-piyush-sati.vercel.app
+https://sycon.vercel.app
   
 ## Screenshots
 
