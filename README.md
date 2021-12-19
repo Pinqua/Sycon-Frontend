@@ -2,7 +2,7 @@
 
 # Sycon - Frontend
 
-Online word processor with real time collaboration build using react.js and node.js
+Online word processor with real time collaboration built using react.js and node.js
 
 
  - [Backend Code](https://github.com/Pinqua/Sycon-Backend)
