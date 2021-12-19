@@ -21,8 +21,8 @@ https://sycon.vercel.app
   
 ## Features
 
-- Progressive Web App (PWA).
-- Real time collaboration.
+- Progressive Web App (PWA)
+- Real time collaboration
 - Responsive and Dynamic
 
 
