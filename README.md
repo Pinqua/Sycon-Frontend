@@ -23,7 +23,7 @@ Online text editor with real time collaboration built using React.js and Node.js
 
  - [Backend Code](https://github.com/Pinqua/Sycon-Backend)
  
-![Logo](https://sycon.vercel.app/favicons/apple-touch-icon.png)
+ <img src="https://sycon.vercel.app/favicons/apple-touch-icon.png" height="100" alt=""/>
 
     
 ## Demo
