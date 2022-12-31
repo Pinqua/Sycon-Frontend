@@ -53,7 +53,7 @@ Clone the project
 Go to the project directory
 
 ```bash
-  cd my-project
+  cd Sycon-Frontend
 ```
 
 Install dependencies
@@ -65,10 +65,9 @@ Install dependencies
 Create a **.env** file inside project directory with fields given below.
 
 ```
-REACT_APP_SERVER_URL=add server url
+  REACT_APP_SERVER_URL=add server url
 
-GENERATE_SOURCEMAP=false
-
+  GENERATE_SOURCEMAP=false
 ```
 
 Start the server
