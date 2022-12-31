@@ -64,7 +64,7 @@ Install dependencies
 
 Create a **.env** file inside project directory with fields given below.
 
-```
+```bash
   REACT_APP_SERVER_URL= #add server url here
   GENERATE_SOURCEMAP=false
 ```
